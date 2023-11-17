@@ -1,0 +1,81 @@
+div.container {
+    height: 80px;
+    background-color: lightgray;
+    margin-right: 35px;
+} 
+
+h1 {
+    color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(https://preview.redd.it/a56olsfuibf81.jpg?auto=webp&s=7ed9d3ff8e1ebd86691f8c3136ea9b58aacb95ab);
+}
+form {
+  background-color: gray;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+input[type="password"],
+a {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 3px;
+  border: 2px solid whitesmoke;
+}
+  a {
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+  a:hover {
+  background-color: orangered;
+}
+
+.btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: white;
+        border: 2px solid gray;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+.btn:hover {
+        background-color: gray;
+    }
+
+.dark .btn:hover {
+        background-color: #FFFFFFFF;
+    }
+
+.btn span {
+        font-size: 24px;
+    }
+.btn span.dark-mode-icon::after {
+        content: "🖤";
+    }
+
+.btn span.dark-mode-icon.dark::after {
+        content: "🩷";
+        background-color: #FFFFFFFF;
+    }
+
+.dark {
+        color: pink;
+        background-color: rgb(40, 40, 40);
+        transition: background-color 1s ease;
+    }

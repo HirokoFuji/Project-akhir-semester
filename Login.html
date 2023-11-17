@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styleHome.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat datang di website TOKO TERMURAH</h1>
+    </div>
+  <form>
+    <h2>Masuk ke Anime Figure Store</h2>
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <a href="Shop.html">submit</a>
+  </form>
+  <div class="btn">
+    <span class="dark-mode-icon"></span>
+  </div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+      document.querySelector(".btn").addEventListener("click", () => {
+          // alert("click!")
+          document.querySelector("body").classList.toggle('dark');
+          document.querySelector(".dark-mode-icon").classList.toggle('dark');
+      })
+  })
+</script>
+</html>
